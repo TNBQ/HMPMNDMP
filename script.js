@@ -1,3 +1,4 @@
+let body = document.querySelector('body')
 let car =  {
     color: 'зелёный',
     brand: 'Песколаз',
@@ -5,12 +6,12 @@ let car =  {
     isDrive: false,
     fuel: 150,
     maxFuel: 150,
-    place1: 0,
-    place2: 0,
+    place1: 6,
+    place2: -6,
     ctr: 4,
     str: 130,
     spumia: false,
-    mexMes: false,
+    mexMes: true,
 }
 see = function(){
     if (car.place1 == 3 && car.place2 == 0){
@@ -78,15 +79,11 @@ dialog = function() {
     }
     else if (car.place1 == 6 && car.place2 == -6 && car.mexMes == true){
         car.spumia = true
-        console.log('Здравствуй, Разумный! Ты на Трилле и слушаешь Кармана.')
-        console.log('Мы видим все миры насквозь.')
-        console.log('Твой мир гибнет. Разумные становятся предметами.')
-        console.log('Куклы продолжают свой бег. Останови их.')
-        console.log('Убей всех подземных неразумных - соедени их со своими рабами.')
-        console.log('Посде этого ты сможешь отомстить за причинённое своему миру зло.')
-        console.log('Контакт прекращён. Механический Мессия контролирует реальность.')
+        text.textContent ='Здравствуй, Разумный! Ты на Трилле и слушаешь Кармана. Мы видим все миры насквозь. Твой мир гибнет. Разумные становятся предметами. Куклы продолжают свой бег. Останови их. Убей всех подземных неразумных - соедени их со своими рабами.    Контакт прекращён. Механический Мессия контролирует реальность.'
+        body.style ='background-size: 100% 240%'
+
     }
-}
+}   
 raise = function() {
     if(car.place1 == 6 && car.place2 == 4){
         console.log('Найден Механический Мессия')

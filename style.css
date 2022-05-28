@@ -1,5 +1,12 @@
 button{
-    width: 200px;
+    width: 50px;
     height: 50px;
     background-color: yellowgreen;
+    margin-left: 130px;
+}
+body{
+    background-image: url(no.jpg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: 100% 530% ;
 }

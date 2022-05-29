@@ -10,3 +10,6 @@ body{
     background-clip: border-box;
     background-size: 100%  ;
 }
+.text{
+color: red;
+}

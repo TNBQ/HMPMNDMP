@@ -8,5 +8,5 @@ body{
     background-image: url(no.jpg);
     background-repeat: no-repeat;
     background-clip: border-box;
-    background-size: 100% 530% ;
+    background-size: 200vh 200vh ;
 }
